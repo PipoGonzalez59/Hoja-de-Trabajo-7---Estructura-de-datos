@@ -46,7 +46,7 @@ public class BinaryTree {
             return current.data.getValue();
         }
 
-        if (word.compareTo(key) < 0) {
+        if (word.compareToIgnoreCase(key) < 0) {
             return searchRec(current.left, word);
         } else {
             return searchRec(current.right, word);
